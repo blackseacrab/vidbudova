@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Ремонт квартир під ключ, створення дизайну інтер'єру і будівництво котеджів високої якості м.Київ"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Tag Manager  ADD LATER-->
+
+    <!-- End Google Tag Manager -->
+
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <script src="https://unpkg.com/swipe-event-listener@1.2.1/dist/swipe-event-listener.js"></script>
+
+    <script type="module" defer src="/src/js/controller.js"></script>
+
+    <title>Відбудова | Ремонт квартир під ключ у Києві</title>
+  </head>
+  <body class="container" id="main">
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo"
+          ><img
+            src="/src/img/logo-big.png"
+            alt="Логотип компанії 'Відбудова'"
+            class="header__logo__img"
+        /></a>
+        <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li>
+              <a class="header__nav--link" href="home">Головна</a>
+            </li>
+            <li>
+              <a class="header__nav--link" href="#">Проекти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="btn btn-popup header__btn u-margin-right" href="#popup">
+        Зв'язатись
+      </a>
+
+      <button class="btn-mobile-nav">
+        <svg class="icon-mobile-nav" name="menu-outline">
+          <use xlink:href="/src/img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="icon-mobile-nav" name="close-outline">
+          <use xlink:href="/src/img/sprite.svg#icon-circle-with-cross"></use>
+        </svg>
+      </button>
+      <div class="mobile__nav">
+        <ul class="mobile__nav--list">
+          <li><a class="mobile__nav--link" href="#what">Чим займаємось</a></li>
+          <li>
+            <a class="mobile__nav--link" href="#features">Нащі переваги</a>
+          </li>
+          <li><a class="mobile__nav--link" href="#testimonials">Відгуки</a></li>
+          <li><a class="mobile__nav--link" href="#buy">Вартість робіт</a></li>
+          <li><a class="mobile__nav--link" href="#faq">Часті запитання</a></li>
+          <li><a class="mobile__nav--link" href="#gallery">Наші роботи</a></li>
+          <li>
+            <a class="mobile__nav--link" href="#cta">Зв'язатись з нами</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="section hero" id="hero">
+      <div class="hero__img-box">
+        <img
+          src="/src/img/hero-1.jpg"
+          alt="Фотографія дизану інтерьєра"
+          class="hero__img hero__img-1"
+        />
+        <img
+          src="/src/img/hero-2.jpg"
+          alt="Фотографія дизану інтерьєра"
+          class="hero__img hero__img-2"
+        />
+      </div>
+      <div class="hero__text-box">
+        <h1 class="heading-1 u-center-text">
+          <span class="hero__text-box-1">
+            Тільки <span class="hero__text-box__outline"> якісний </span><br />
+          </span>
+          <span class="hero__text-box-2">
+            <span class="hero__text-box__outline"> ремонт </span> квартир
+          </span>
+        </h1>
+        <ul class="hero__text-box__list">
+          <li class="hero__text-box__list__item">
+            <svg class="hero__text-box__list__item__icon">
+              <use xlink:href="/src/img/sprite.svg#icon-infinity"></use>
+            </svg>
+            <p class="paragraph">
+              <span class="hero__text-box__list__item__number">10+</span>
+              років досвіду
+            </p>
+          </li>
+          <li class="hero__text-box__list__item">
+            <svg class="hero__text-box__list__item__icon">
+              <use xlink:href="/src/img/sprite.svg#icon-home"></use>
+            </svg>
+            <p class="paragraph">
+              <span class="hero__text-box__list__item__number">150+ </span>
+              виконаних обєктів
+            </p>
+          </li>
+          <li class="hero__text-box__list__item">
+            <svg class="hero__text-box__list__item__icon">
+              <use xlink:href="/src/img/sprite.svg#icon-add-user"></use>
+            </svg>
+            <p class="paragraph">
+              <span class="hero__text-box__list__item__number">24+ </span>
+              штатних співробітників
+            </p>
+          </li>
+        </ul>
+        <div class="hero__btns">
+          <a class="btn btn--white" href="#what">Дізнатись більше &darr; </a>
+          <a href="#cta" class="btn">Залишити заявку</a>
+        </div>
+      </div>
+    </div>
+    <div class="section band" id="band">
+      <div class="band__stripe band__stripe-1">
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">КРАЩА РЕМОНТНА КОМПАНІЯ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">БУДІВНИЦТВО БУДИНКУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">ПРЕМІАЛЬНИЙ ДИЗАЙН ІНТЕР'ЄРУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">КРАЩА РЕМОНТНА КОМПАНІЯ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">БУДІВНИЦТВО БУДИНКУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">ПРЕМІАЛЬНИЙ ДИЗАЙН ІНТЕР'ЄРУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+      </div>
+      <div class="band__stripe band__stripe-2">
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">КРАЩА РЕМОНТНА КОМПАНІЯ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">БУДІВНИЦТВО БУДИНКУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">ПРЕМІАЛЬНИЙ ДИЗАЙН ІНТЕР'ЄРУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">КРАЩА РЕМОНТНА КОМПАНІЯ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">БУДІВНИЦТВО БУДИНКУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+        <p class="band__stripe__text">ПРЕМІАЛЬНИЙ ДИЗАЙН ІНТЕР'ЄРУ</p>
+        <span class="band__stripe__simbol">&infin;</span>
+      </div>
+    </div>
+
+    <div class="section what" id="what">
+      <div class="what__heading-box">
+        <div class="what__heading heading-2">
+          <p class="what__subheading subheading">&lowast; Що ми пропонуємо</p>
+          Дізнайтеся,<br />
+          що ми робимо
+        </div>
+      </div>
+
+      <div class="what__options">
+        <div class="what__options-box">
+          <svg class="what__options-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-images"></use>
+          </svg>
+          <h3 class="what__options-box__heading heading-3">Дизайн проект</h3>
+          <ul class="what__options-box__list">
+            <li class="what__options-box__item">Обмір вашого обєкта</li>
+            <li class="what__options-box__item">Розробка технічного проекту</li>
+            <li class="what__options-box__item">Створення 3D візуалізацій</li>
+            <li class="what__options-box__item">Необмеженні коригування</li>
+          </ul>
+        </div>
+        <div class="what__options-box">
+          <svg class="what__options-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-tools"></use>
+          </svg>
+          <h3 class="what__options-box__heading heading-3">Ремонт</h3>
+          <ul class="what__options-box__list">
+            <li class="what__options-box__item">Створення кошторису</li>
+            <li class="what__options-box__item">Підписання договору</li>
+            <li class="what__options-box__item">Реалізація ваших ідей</li>
+            <li class="what__options-box__item">Регулярна звітність у чаті</li>
+          </ul>
+        </div>
+        <div class="what__options-box">
+          <svg class="what__options-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-traffic-cone"></use>
+          </svg>
+          <h3 class="what__options-box__heading heading-3">Будівництво</h3>
+          <ul class="what__options-box__list">
+            <li class="what__options-box__item">Погодження проекту</li>
+            <li class="what__options-box__item">Затвердження кошторису</li>
+            <li class="what__options-box__item">Робота на ділянці</li>
+            <li class="what__options-box__item">Прийняття роботи</li>
+          </ul>
+        </div>
+        <div class="what__options-box">
+          <svg class="what__options-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-text-document"></use>
+          </svg>
+          <h3 class="what__options-box__heading heading-3">Комплектація</h3>
+          <ul class="what__options-box__list">
+            <li class="what__options-box__item">Замовлення корпусних меблів</li>
+            <li class="what__options-box__item">
+              Підбір м'яких меблів та декору
+            </li>
+            <li class="what__options-box__item">Узгодження техніки</li>
+            <li class="what__options-box__item">
+              Доставка та Встановлення обладнання
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section features" id="features">
+      <div class="features__header heading-2">
+        <p class="features__subheading subheading">Чого ми досягли</p>
+        <h3 class="features__heading heading-2 u-margin-bottom-medium">
+          Наші переваги
+        </h3>
+      </div>
+      <div class="features-box">
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-shield"></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Нагляд</h3>
+          <p class="feature-box__text">
+            За кожним об’єктом закріплюється керівник проекту, технічний
+            директор та технагляд.
+          </p>
+        </div>
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use
+              xlink:href="/src/img/sprite.svg#icon-creative-commons-remix"
+            ></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Контроль</h3>
+          <p class="feature-box__text">
+            За об'єктом ведеться відео-спостереження 24/7
+          </p>
+        </div>
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-colours"></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Візуалізація</h3>
+          <p class="feature-box__text">
+            Дизайн проект розробляють найкращі дизайнери Дніпра та Одеси, а
+            можливо й України.
+          </p>
+        </div>
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-graduation-cap"></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Досвід</h3>
+          <p class="feature-box__text">
+            На об’єкті працюють тільки вузькопрофільні штатні працівники
+            компаній
+          </p>
+        </div>
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-lock"></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Надійність</h3>
+          <p class="feature-box__text">
+            Всі домовленості закріплюються в договорі, де прописані гарантії і
+            штрафні санкції при затримці строків - репутація для нас важлива
+          </p>
+        </div>
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/src/img/sprite.svg#icon-thumbs-up"></use>
+          </svg>
+          <h3 class="heading-4 u-margin-bottom-small">Якість</h3>
+          <p class="feature-box__text">
+            Для нас нема проблем показати об’єкти які в реалізації
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section about" id="about">
+      <div class="about__img-box">
+        <img
+          src="/src/img/about.png"
+          alt="Фотографія дизану інтерьєра"
+          class="about__img"
+        />
+      </div>
+      <div class="about__text-box">
+        <h2 class="heading-2">
+          <p class="about__text-box__subheading subheading">
+            &lowast; Ми пропонуємо вам найкращий ремонт
+          </p>
+          <div class="about__text-box-1">
+            Переосмисліть
+            <span class="about__text-box__outline about__text-box__outline-1"
+              >свій</span
+            >
+            <br />
+          </div>
+          <div class="about__text-box-2">
+            <span class="about__text-box__outline about__text-box__outline-2"
+              >унікальний</span
+            >
+            простір
+          </div>
+        </h2>
+        <p class="about__text-box__description paragraph">
+          Компанія "Koteno Group" пропонує Вам повний спектр послуг у сфері
+          будівництва та ремонту будівель. Наша компанія має багаторічний досвід
+          у розробці та будівництві як житлових, так і комерційних об'єктів. Ми
+          прагнемо забезпечити нашим клієнтам високу якість послуг та
+          задоволення від роботи з нами. Ми здійснюємо будівництво з
+          використанням сучасних технологій та матеріалів, що дозволяє нам
+          гарантувати надійність та довговічність будівель. Крім того, наші
+          фахівці мають високу кваліфікацію та виконують роботу з уважністю до
+          деталей. Ми пропонуємо індивідуальний підхід до кожного клієнта та
+          працюємо з ними на протязі всього процесу будівництва, щоб забезпечити
+          найкращий результат. Будівництво та ремонт - це наша справа, і ми
+          робимо її з великою відповідальністю та професіоналізмом.
+        </p>
+      </div>
+    </div>
+    <div class="section testimonials" id="testimonials">
+      <div class="testimonials__header">
+        <p class="testimonials__subheading subheading">Ви ще не впевнені?</p>
+        <h3 class="testimonials__heading heading-3">
+          Відгуки задоволених клієнтів
+        </h3>
+      </div>
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Компанія, яка перевершила мої очікування
+            </h5>
+            <blockquote class="testimonial__text">
+              Я був вражений професійністю і досвідом, який продемонструвала
+              компанія в управлінні нашим проектом будівництва. Вони
+              дотримувалися термінів, були уважні до наших побажань і завжди
+              були доступні для спілкування.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-1.jpg"
+                alt="Фотографія"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Ігор</h6>
+              <p class="testimonial__location">ЖК "Panorama Deluxe"</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Вражаючий досвід співпраці</h5>
+            <blockquote class="testimonial__text">
+              Ми дуже задоволені результатами роботи компанії. Вони зробили все
+              можливе, щоб наша квартира відповідала нашим потребам і була
+              збудована вчасно. Я рекомендую цю компанію для будь-яких проектів
+              будівництва.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-2.jpg"
+                alt="Фотографія "
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Олександр</h6>
+              <p class="testimonial__location">ЖК "Black Sea Towers"</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Професійний підхід до будівництва
+            </h5>
+            <blockquote class="testimonial__text">
+              Я був здивований, наскільки швидко і ефективно компанія виконала
+              роботу. Вони підійшли до нашого проекту з великою відповідальністю
+              і завжди були готові допомогти вирішити будь-які питання.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-3.jpg"
+                alt="Фотографія "
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Віталій</h6>
+              <p class="testimonial__location">ЖК "Kadorr Riviera"</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Надійний партнер для будь-яких проектів
+            </h5>
+            <blockquote class="testimonial__text">
+              Компанія має професійний підхід до роботи. Вони були дуже чіткі в
+              своїх інструкціях, завжди дотримувалися графіку роботи і надавали
+              нам детальну інформацію про хід робіт.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-4.jpg"
+                alt="Фотографія "
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Андрій</h6>
+              <p class="testimonial__location">ЖК "Suvorovsky Prospect"</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Дотримання термінів і вимог клієнтів
+            </h5>
+            <blockquote class="testimonial__text">
+              Ми працювали з цією компанією на декількох проектах, і завжди були
+              задоволені результатами. Вони мають висококваліфікованих фахівців,
+              які знають свою роботу і завжди готові допомогти.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-5.jpg"
+                alt="Фотографія "
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Ольга</h6>
+              <p class="testimonial__location">ЖК "Marseille"</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              "Висока якість робіт і відмінний сервіс
+            </h5>
+            <blockquote class="testimonial__text">
+              Компанія була дуже професійною і досвідченою в роботі з нами. Вони
+              зробили все можливе, щоб забезпечити нам максимальний комфорт під
+              час будівництва. Я рекомендую їх як надійного партнера для
+              будь-яких будівельних проектів.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="/src/img/testimonials/user-6.jpg"
+                alt="Фотографія "
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Володимир</h6>
+              <p class="testimonial__location">ЖК "City Park"</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">
+          <svg class="slider__btn__icon">
+            <use
+              xlink:href="/src/img/sprite.svg#icon-chevron-with-circle-left"
+            ></use>
+          </svg>
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <svg class="slider__btn__icon">
+            <use
+              xlink:href="/src/img/sprite.svg#icon-chevron-with-circle-right"
+            ></use>
+          </svg>
+        </button>
+        <div class="dots"></div>
+      </div>
+    </div>
+    <div class="section buy" id="buy">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="buy__heading heading-2">
+          Вартість ремонту квартир під ключ
+        </h2>
+      </div>
+      <div class="buy__card-box">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <h4 class="card__heading card__heading-1">Стартовий</h4>
+            <div class="card__details">
+              <ul>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use>
+                  </svg>
+                  Чорнові матеріали та робота
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Електромонтаж
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Сантехніка
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Стеля
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Шпалери
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Ламінат
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Санфаянс
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Освітлювальні прилади
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Плитка
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Міжкімнатні двері
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кондиціонер
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кухня
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Штори
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Аксесуари для санвузла
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Телевізори
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кухонна техніка
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Пральна машина
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Спальний гарнітур
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Меблі
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-1">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Від</p>
+                <p class="card__price-value">2499</p>
+                <p class="card__price-desc">грн/м&sup2;</p>
+              </div>
+              <a href="#popup" class="btn btn-popup btn--white"
+                >Залишити заявку</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__side card__side--front">
+            <h4 class="card__heading card__heading-2">Базовий</h4>
+            <div class="card__details">
+              <ul>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use>
+                  </svg>
+                  Чорнові матеріали та робота
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Електромонтаж
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Сантехніка
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Стеля
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Шпалери
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Ламінат
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Санфаянс
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Освітлювальні прилади
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Плитка
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Міжкімнатні двері
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кондиціонер
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кухня
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Штори
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Аксесуари для санвузла
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Телевізори
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кухонна техніка
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Пральна машина
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Спальний гарнітур
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Меблі
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-2">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Від</p>
+                <p class="card__price-value">3999</p>
+                <p class="card__price-desc">грн/м&sup2;</p>
+              </div>
+              <a href="#popup" class="btn btn-popup btn--white"
+                >Залишити заявку</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__side card__side--front card__side--front-main">
+            <h4 class="card__heading card__heading-3">Стандарт</h4>
+            <div class="card__details">
+              <ul>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use>
+                  </svg>
+                  Чорнові матеріали та робота
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Електромонтаж
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Сантехніка
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Стеля
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Шпалери
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Ламінат
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Санфаянс
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Освітлювальні прилади
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Плитка
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Міжкімнатні двері
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Кондиціонер
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Кухня
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Штори
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Аксесуари для санвузла
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Телевізори
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Кухонна техніка
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Пральна машина
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Спальний гарнітур
+                </li>
+                <li class="card__details__cross">
+                  <svg class="card__details__icon card__details__cross">
+                    <use
+                      xlink:href="/src/img/sprite.svg#icon-circle-with-cross"
+                    ></use></svg
+                  >Меблі
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-3">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Від</p>
+                <p class="card__price-value">4999</p>
+                <p class="card__price-desc">грн/м&sup2;</p>
+              </div>
+              <a href="#popup" class="btn btn-popup btn--white"
+                >Залишити заявку</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__side card__side--front">
+            <h4 class="card__heading card__heading-4">Максимум</h4>
+            <div class="card__details">
+              <ul>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use>
+                  </svg>
+                  Чорнові матеріали та робота
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Електромонтаж
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Сантехніка
+                </li>
+                <li>
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Стеля
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Шпалери
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Ламінат
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Санфаянс
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Освітлювальні прилади
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Плитка
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Міжкімнатні двері
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Кондиціонер
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Кухня
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Штори
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Аксесуари для санвузла
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Телевізори
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Кухонна техніка
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Пральна машина
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Спальний гарнітур
+                </li>
+                <li class="">
+                  <svg class="card__details__icon">
+                    <use xlink:href="/src/img/sprite.svg#icon-check"></use></svg
+                  >Меблі
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-4">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Від</p>
+                <p class="card__price-value">7999</p>
+                <p class="card__price-desc">грн/м&sup2;</p>
+              </div>
+              <a href="#popup" class="btn btn-popup btn--white"
+                >Залишити заявку</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section faq" id="faq">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="faq__heading heading-2">Відповідаємо на ваші запитання</h2>
+      </div>
+      <div class="faq__box">
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-1">
+              Яка форма оплати?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-1">
+              Працюємо за договором на ФОП або ТОВ, за готівковим та
+              безготівковим розрахунком.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-2">
+              Як оплачуються послуги з ремонту?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-2">
+              Оплата за роботу поетапна за фактом виконання. Якщо об'єкт
+              робиться нашою командою під ключ з комплектацією нашим матеріалом,
+              ви вносите поетапну передоплату прописано в договорі. По
+              завершенню кожного етапу вам надається кошторис по виконаних
+              роботах.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-3">
+              Як швидко ви можете розпочати ремонт?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-3">
+              Роботи розпочинаються після завезення матеріалів на об'єкт. З
+              нашої практики це відбувається протягом 3-х днів після підписання
+              договору
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-4">
+              Які в середньому терміни ремонту квартири?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-4">
+              Будь-який вид ремонту буде відрізнятися за термінами. Це залежить
+              від ряду факторів: стан квартири після забудовника, виду обробки
+              стін, стеля та підлоги, складність монтажу комунікацій тощо.
+              Наприклад, нечасто зустрічаються ЖК із ідеально рівними стінами,
+              часто буває грибок, а стіни вже оштукатурені. У цьому випадку для
+              досягнення якісного результату потрібно буде демонтувати старе
+              покриття, обробити антигрибковою рідиною, вивести мусор та
+              штукатурити по новій. З урахуванням того, що штукатурка може
+              сохнути до 3-х тижнів (залежно від погодних умов і температури
+              приміщення) це вже може зайняти місяць. Тому ще раз повторюся,
+              терміни завжди індивідуальні. Зазвичай хороший та якісний ремонт з
+              дотриманням усіх технологій – робиться від 3-х до 6-ти місяців.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-5">
+              Будівельна компанія працює зі старими приміщеннями чи тільки з
+              новобудовами?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-5">
+              Нам все одно потрібно буде відновлювати стару квартиру або робити
+              оздоблення в новому приміщенні. Співробітники беруться за будь-які
+              замовлення, не зважаючи на рівень складності. Але відразу варто
+              зазначити, що ремонт у новобудовах коштує дешевше.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-6">
+              Ви доставляєте матеріали на об'єкт?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-6">
+              Звичайно, Ми займаємося цим і для зручності клієнтів самостійно
+              закуповуємо та доставляємо всі матеріали.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-7">
+              Як ви працюєте без світла?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-7">
+              Ми відразу купили генератори, щоб не ускладнювати процес роботи
+              собі і дотримуватися термінів, прописаних у договорі
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-8">
+              Ціноутворення
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-8">
+              Індивідуальний підхід до клієнта; - Знижки від партнерів на
+              будматеріали, меблі, обладнання.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-9">
+              Скільки коштує виїзд спеціаліста на об'єкт?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-9">
+              Виїзд спеціаліста та консультація в Одесі та Одеській області у
+              нас безкоштовна.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-10">
+              Який термін гарантії на роботу з ремонту квартир?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-10">
+              Ми надаємо 2 роки гарантії на роботу при використанні наших
+              матеріалів.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-11">
+              Хто приймає роботу перед оплатою?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-11">
+              Після завершення етапу роботи керівник проєкту відправляє Вам
+              Кошторис з фактичним обсягом роботи, яку сам попередньо перевіряє.
+              Ви можете приїхати на об'єкт і особисто все перевірити. Якщо ви
+              перебуваєте не в Одесі або Дніпрі, вам надсилається відео звіт зі
+              всіма виконаними роботами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-12">
+              Чи можна замовити якийсь окремий вид робіт, а не повноцінний
+              ремонт?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-12">
+              Так, можна узгодити всі деталі з консультантами та замовити якусь
+              одну послугу, якщо це необхідно. Оплата здійснюється поетапно.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-13">
+              Скільки коштуватиме ремонт за квадратний метр?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-13">
+              Точну ціну назвати не можна, оскільки бувають різні види ремонту і
+              до кожного потрібен індивідуальний підхід, через що й кошторис
+              буває різним. Точну цифру фахівці зможуть назвати лише тоді, коли
+              вони оцінять масштаби робіт та вислухають усі побажання
+              замовників.
+            </p>
+          </div>
+        </div>
+        <div class="faq__box__item">
+          <div class="faq__box__item__header-box">
+            <h4 class="faq__box__item__header faq__box__item__header-14">
+              Ви працюєте зараз під час війни?
+            </h4>
+            <svg class="faq__icon faq__icon__close">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon__open icon__hidden">
+              <use xlink:href="/src/img/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="faq__box__item__text-box">
+            <p class="faq__box__item__text faq__box__item__text-14">
+              Компанія була постійно в Києві і не планує, нікуди їхати, а тільки
+              розширювати свій штат співробітників та роботу в інших областях
+              України
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section gallery" id="gallery">
+      <div class="gallery__heading-box">
+        <div class="gallery__heading heading-2">
+          <p class="gallery__subheading subheading">
+            &lowast; Нещодавня робота
+          </p>
+          Наші проекти
+        </div>
+      </div>
+      <div class="gallery-box">
+        <div class="gallery__item gallery__item-1">
+          <div class="gallery__item__img-box">
+            <img
+              src="/src/img/gallery-1.webp"
+              alt="Фотографія квартири після ремонту"
+              class="gallery__item__img"
+            />
+            <p class="gallery__item__img__title">Ремонт квартири</p>
+          </div>
+          <h5 class="gallery__item__header heading-3">ЖК Taryan Towers</h5>
+          <p class="gallery__item__text paragraph">
+            Двох кімнатна квартира в центрі Києва, було розроблена за нашим
+            дизайном проєкту. Найголовніше для молодого сімейства було створення
+            комфорту для життя і роботи. Молода людина більшу частину часу
+            працює вдома, а його дружина створює власну косметику.
+          </p>
+        </div>
+        <div class="gallery__item gallery__item-2">
+          <div class="gallery__item__img-box">
+            <img
+              src="/src/img/gallery-2.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="gallery__item__img"
+            />
+            <p class="gallery__item__img__title">Ремонт під ключ</p>
+          </div>
+          <h5 class="gallery__item__header heading-3">ЖК Tetris Hall</h5>
+          <p class="gallery__item__text paragraph">
+            Молода сім'я замовила не тільки дизайн проект , а ремонт квартири
+            під ключ. Головним приміщенням стала вітальня. Замовники наголосили
+            саме на ній. Особливим побажанням було розмістити "величезний"
+            телевізор. Так, щоб його було добре дивитися і у вітальні, і в
+            поєднаній кухні.
+          </p>
+        </div>
+        <div class="gallery__item gallery__item-3">
+          <div class="gallery__item__img-box">
+            <img
+              src="/src/img/gallery-3.webp"
+              alt="Фотографія квартири після ремонту"
+              class="gallery__item__img"
+            />
+            <p class="gallery__item__img__title">Ремонт</p>
+          </div>
+          <h5 class="gallery__item__header heading-3">ЖК PECHERSK PLAZA 52</h5>
+          <p class="gallery__item__text paragraph">
+            Цього разу клієнтом став молодий неодружений чоловік, айтішник за
+            професією. Йому дуже подобається лофтовий напрямок. Крім того,
+            інтер'єр мав бути хоч і мінімальним, але функціональним. Як
+            результат — вийшла справжня рівновага між комфортом та розумним
+            споживанням.
+          </p>
+        </div>
+      </div>
+      <div class="gallery__btns">
+        <a class="btn btn--gallery" href="#">Більше наших робіт</a>
+      </div>
+    </div>
+    <div class="section featured-in" id="featured-in">
+      <div class="featured-in__box">
+        <h4 class="heading-4">Я співпрацюю з найкращими компаніями</h4>
+        <div class="featured-in__logos">
+          <img
+            class="featured-in__logo featured-in__logo-1"
+            src="/src/img/logos-1.png"
+            alt="logo"
+          />
+          <img
+            class="featured-in__logo featured-in__logo-2"
+            src="/src/img/logos-2.png"
+            alt="logo"
+          />
+          <img
+            class="featured-in__logo featured-in__logo-3"
+            src="/src/img/logos-3.png"
+            alt="Logo"
+          />
+          <img
+            class="featured-in__logo featured-in__logo-4"
+            src="/src/img/logos-4.png"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="section cta" id="cta">
+      <div class="cta-box">
+        <div class="cta__text-box">
+          <h2 class="heading-3 cta__text-box__heading">
+            Залиште вашу заявку прямо зараз!
+          </h2>
+          <p class="cta__text paragraph">
+            Заповніть цю форму, щоб отримати додаткову інформацію про нашу
+            будівельну компанію. Ми з радістю відповімо на ваші запитання та
+            допоможемо зробити правильний вибір.
+          </p>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="cta__form"
+            name="sign-up"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+            />
+            <div>
+              <label for="full-name">Ім'я</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Тарас Шевченко"
+                name="Повне ім'я"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                type="tel"
+                minlength="9"
+                maxlength="13"
+                placeholder="+380 12 345 67 89"
+                name="Телефон"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="select-pack">Оберіть пакет який вас зацікавив</label>
+              <select id="select-pack" name="Пакет" required>
+                <option value="">Оберіть пакет:</option>
+                <option value="Стартовий">Стартовий</option>
+                <option value="Базовий">Базовий</option>
+                <option value="стандартний">Стандарт</option>
+                <option value="Максимум">Максимум</option>
+              </select>
+            </div>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <button type="submit" class="btn btn--form">
+              Відправити запит
+            </button>
+          </form>
+        </div>
+        <div
+          class="cta-img-box"
+          role="img"
+          aria-label="Фотографія квартири"
+        ></div>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="social">
+        <a href="#" class="social__logo">
+          <img
+            class="social__logo__img"
+            alt="OSV logo"
+            src="/src/img/logo-big.png"
+          />
+        </a>
+
+        <ul class="social__links">
+          <li>
+            <a
+              class="social__links__link"
+              href="https://www.instagram.com/kotenko_group/"
+              target="_blank"
+            >
+              <svg class="social__links__icon">
+                <use xlink:href="/src/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__links__link" href="#" target="_blank">
+              <svg class="social__links__icon">
+                <use xlink:href="/src/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="social__copyright">
+          &copy; <span class="year">2027</span> Всі права захищені.
+        </p>
+      </div>
+      <div class="contacts">
+        <p class="contacts__heading">Контакти</p>
+        <address class="contacts__contact">
+          <p class="contacts__contact__address">м. Дніпро | м. Одеса</p>
+          <a class="contacts__contact__link" href="tel:+380660353578"
+            >(+38) 099-046-69-67</a
+          >
+
+          <a class="contacts__contact__link" href="mailto:svistunov.o@gmail.com"
+            >youremail@gmail.com</a
+          >
+        </address>
+      </div>
+
+      <nav class="nav">
+        <p class="nav__heading contacts__heading">Навігація</p>
+        <ul class="nav__nav">
+          <li><a class="nav__nav__link" href="#what">Чим займаємось</a></li>
+          <li><a class="nav__nav__link" href="#features">Нащі переваги</a></li>
+          <li><a class="nav__nav__link" href="#testimonials">Відгуки</a></li>
+          <li><a class="nav__nav__link" href="#buy">Вартість робіт</a></li>
+          <li><a class="nav__nav__link" href="#faq">Часті запитання</a></li>
+          <li><a class="nav__nav__link" href="#gallery">Наші роботи</a></li>
+          <li><a class="nav__nav__link" href="#cta">Зв'язатись з нами</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- Popup window  hidden-->
+
+    <div class="popup hidden" id="popup">
+      <div class="popup__content">
+        <div class="cta-box">
+          <button class="popup__close">&times;</button>
+          <div class="cta__text-box">
+            <h2 class="heading-3 cta__text-box__heading">
+              Залиште вашу заявку прямо зараз!
+            </h2>
+            <p class="cta__text paragraph">
+              Заповніть цю форму, щоб отримати додаткову інформацію про нашу
+              будівельну компанію. Ми з радістю відповімо на ваші запитання та
+              допоможемо зробити правильний вибір.
+            </p>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="cta__form"
+              name="sign-up"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+              />
+              <div>
+                <label for="full-name">Ім'я</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Тарас Шевченко"
+                  name="Повне ім'я"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Телефон</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  minlength="9"
+                  maxlength="13"
+                  placeholder="+380 12 345 67 89"
+                  name="Телефон"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-pack"
+                  >Оберіть пакет який вас зацікавив</label
+                >
+                <select id="select-pack" name="Пакет" required>
+                  <option value="">Оберіть пакет:</option>
+                  <option value="Стартовий">Стартовий</option>
+                  <option value="Базовий">Базовий</option>
+                  <option value="стандартний">Стандарт</option>
+                  <option value="Максимум">Максимум</option>
+                </select>
+              </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+
+              <button type="submit" class="btn btn--form">
+                Відправити запит
+              </button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Фотографія квартири"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="success hidden" id="success">
+      <div class="success-box">
+        <div class="success__text-box">
+          <h2 class="heading-3 success__text-box__heading">
+            Вашу заявку прийнято!
+          </h2>
+          <p class="success__text paragraph">
+            Ми хочемо висловити свою щиру подяку за те, що ви відвідали наш
+            веб-сайт та заповнили форму. Ми готові надати вам кваліфіковану
+            допомогу та підтримку в будь-якій сфері нашої діяльності. Наша
+            команда фахівців завжди готова відповісти на всі ваші запитання та
+            допомогти у вирішенні будь-яких проблем. Ми будемо раді бачити вас
+            серед наших клієнтів та зробимо все можливе, щоб забезпечити вам
+            якісний сервіс та задоволення від співпраці з нами. З повагою,
+            Kotenko Group.
+          </p>
+          <a href="#" class="success-btn">На головну</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

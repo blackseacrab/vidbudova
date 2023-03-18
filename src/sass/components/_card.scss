@@ -1,0 +1,245 @@
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 65rem;
+
+  &__side {
+    height: 65rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, 0.15);
+
+    &--front {
+      background-color: $color-primary-light;
+    }
+    &--front-main {
+      background-color: $color-primary-medium;
+
+      @include respond(phone-big) {
+        background-color: $color-primary-light;
+      }
+    }
+    &--front-main::after {
+      content: "Краща ціна";
+      position: absolute;
+      top: 4%;
+      right: -24%;
+
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: $color-text-dark;
+      background-color: #ffd43b;
+      padding: 0.8rem 8rem;
+      transform: rotate(45deg);
+
+      @include respond(lap-top) {
+        top: 4%;
+        right: -28%;
+        font-size: 1.4rem;
+      }
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-start-1,
+          $color-card-start-2
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-base-1,
+          $color-card-base-2
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-standart-1,
+          $color-card-standart-2
+        );
+      }
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-max-1,
+          $color-card-max-2
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+
+  &__heading {
+    margin-top: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text-dark-2;
+    padding: 1rem;
+
+    &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-card-start-1, 0.3),
+        rgba($color-card-start-2, 0.3)
+      );
+    }
+    &-2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-card-base-1, 0.3),
+        rgba($color-card-base-2, 0.3)
+      );
+    }
+    &-3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-card-standart-1, 0.3),
+        rgba($color-card-standart-2, 0.3)
+      );
+    }
+    &-4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-card-max-1, 0.3),
+        rgba($color-card-max-2, 0.3)
+      );
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+
+    &__icon {
+      margin-right: 1rem;
+      height: 1.2rem;
+      width: 1.2rem;
+      fill: $color-text-dark-2;
+    }
+    &__cross {
+      color: rgba($color-primary-black, 0.3);
+      fill: rgba($color-primary-black, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      width: 90%;
+      margin: 0 auto;
+
+      li {
+        text-align: left;
+        font-size: 1.4rem;
+        padding: 0.6rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-text-light;
+        }
+      }
+    }
+  }
+
+  .card--main {
+    background-color: $color-primary;
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-primary-light;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 8rem;
+    font-weight: 400;
+  }
+  &__price-desc {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-primary-light;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, 0.15);
+
+    .card--main {
+      background-color: none;
+    }
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}

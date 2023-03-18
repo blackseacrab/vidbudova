@@ -1,0 +1,76 @@
+.gallery {
+  margin: 0 0 8rem 0;
+
+  @include respond(tab-port) {
+    margin: 0;
+  }
+
+  &__heading-box {
+    transform: translateY(12rem);
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+
+    @include respond(tab-port) {
+      transform: translateY(0rem);
+    }
+  }
+  &-box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 8rem;
+    grid-column-gap: 8rem;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      width: 75%;
+      padding-bottom: 6rem;
+    }
+  }
+  &__item {
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem 2rem rgba($color: $color-primary, $alpha: 0.1);
+
+    &-1 {
+      grid-row: 1 / -1;
+    }
+    &__img-box {
+      position: relative;
+    }
+    &__img {
+      border-radius: 4px;
+      height: 100%;
+      width: 100%;
+
+      @include respond(tab-port) {
+        transform: scale(0.9);
+      }
+    }
+    &__img__title {
+      color: $color-text-light;
+      background-color: $color-primary-black;
+      padding: 1rem;
+      font-size: 2rem;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+    &__header {
+      font-size: 3rem;
+    }
+    &__text {
+    }
+  }
+  &__btns {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+}

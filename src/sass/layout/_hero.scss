@@ -1,0 +1,195 @@
+.hero {
+  max-width: 100vw;
+  height: max-content;
+  background-image: linear-gradient(
+    rgba(#000, 1),
+    rgba($color-primary-black, 0.95)
+  );
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  color: $color-text-light-2;
+
+  @include respond(phone-big) {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img-box {
+    justify-self: center;
+    align-self: center;
+
+    width: 40rem;
+    position: relative;
+
+    @include respond(phone-big) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+  &__img {
+    position: absolute;
+    height: 40rem;
+    width: auto;
+    transition: all 0.3s;
+
+    @include respond(phone) {
+      height: 30rem;
+    }
+    @include respond(phone-small) {
+      height: 22rem;
+    }
+
+    &-1 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-70%, -40%) scale(1);
+
+      @include respond(phone-big) {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+      }
+
+      &:hover {
+        transform: translate(-70%, -40%) scale(1.05);
+        z-index: 999;
+
+        @include respond(phone-big) {
+          transform: translate(0%, 0%);
+          z-index: 999;
+        }
+      }
+    }
+    &-2 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -60%) scale(1);
+
+      @include respond(phone-big) {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+      }
+      &:hover {
+        transform: translate(-30%, -60%) scale(1.05);
+        z-index: 999;
+
+        @include respond(phone-big) {
+          transform: translate(0%, 0%);
+          z-index: 999;
+        }
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex: 1;
+    gap: 4rem;
+
+    @include respond(phone-big) {
+      align-items: center;
+      justify-content: center;
+    }
+    @include respond(phone) {
+      gap: 2rem;
+    }
+    &-1 {
+      padding-left: 8rem;
+
+      @include respond(phone-big) {
+        padding-left: 6rem;
+      }
+      @include respond(phone-small) {
+        padding-left: 4rem;
+      }
+    }
+
+    &__outline {
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: inherit;
+      margin: 1rem 0;
+      padding: 0 4rem;
+      background-image: linear-gradient(
+        to right,
+        $color-primary,
+        $color-text-medium
+      );
+      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+      @include respond(phone-small) {
+        padding: 0 1.8rem;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      transform: translateX(100%);
+      margin-bottom: 2rem;
+      @include respond(phone-big) {
+        transform: translateX(0%);
+        width: 60%;
+      }
+      @include respond(phone) {
+        width: 80%;
+      }
+
+      &__item {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        &__icon {
+          height: 3.2rem;
+          width: 3.2rem;
+          fill: $color-primary;
+          transition: all 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &__number {
+          font-size: 4rem;
+          font-weight: 600;
+          color: $color-text-light;
+
+          @include respond(phone-big) {
+            font-size: 3.2rem;
+          }
+          @include respond(phone) {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+    @include respond(phone-small) {
+      flex-direction: column;
+      max-width: max-content;
+    }
+    @include respond(phone) {
+      gap: 2rem;
+    }
+  }
+}

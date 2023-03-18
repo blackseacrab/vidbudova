@@ -1,0 +1,99 @@
+.cta {
+  &-box {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2rem 4rem rgba($color-primary-black, 0.5);
+    width: 85vw;
+
+    @include respond(phone-big) {
+      display: block;
+      width: 75vw;
+    }
+  }
+  &__text-box {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-card-base-1,
+      $color-card-base-2
+    );
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    @include respond(phone-big) {
+      padding: 2rem 3rem 3rem 3rem;
+    }
+
+    &__heading {
+      margin-bottom: 4rem;
+      color: inherit;
+
+      @include respond(lap-top) {
+        font-size: 3.2rem;
+      }
+      @include respond(phone-big) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+
+    @include respond(phone-big) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+
+    @include respond(phone-big) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  &__form input,
+  &__form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: $color-text-light-2;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  &__form input::placeholder {
+    color: rgba($color-text-medium, 0.5);
+  }
+}
+.cta-img-box {
+  flex: 0 0 40%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-card-base-1, 0.4),
+      rgba($color-card-base-2, 0.45)
+    ),
+    url("/src/img/hero-2.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include respond(phone-big) {
+    background-image: none;
+  }
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba($color-text-light-2, 0.5);
+}

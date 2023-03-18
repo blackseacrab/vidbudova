@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 8rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+.hero {
+}
+.band {
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  height: max-content;
+  display: flex;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+.what {
+  margin: 8rem 4rem;
+
+  height: max-content;
+
+  @include respond(phone-big) {
+    margin: 4rem 3rem;
+  }
+}
+.features {
+  padding: 8rem 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-text-light-2,
+    $color-primary-medium,
+    $color-text-light-2
+  );
+
+  @include respond(phone-big) {
+    padding: 4rem 3rem;
+  }
+}
+.testimonials {
+  height: max-content;
+}
+.buy {
+  padding-top: 8rem;
+  background-image: linear-gradient(
+    rgba($color-primary-black, 0.9),
+    rgba(#000, 1)
+  );
+  padding-bottom: 8rem;
+
+  @include respond(phone-big) {
+    padding-bottom: 6rem;
+  }
+
+  &__card-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 8rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+
+    @include respond(tab-land) {
+      padding-top: 6rem;
+      margin: 4rem;
+    }
+  }
+  &__heading {
+    color: $color-text-light-2;
+  }
+}
+.faq {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(
+    rgba(#000, 1),
+    rgba($color-primary-black, 1)
+  );
+
+  @include respond(tab-land) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.gallery {
+  padding-top: 2rem;
+}
+.featured-in {
+  border-top: 2px solid rgba($color-primary-medium, 0.5);
+  border-bottom: 2px solid rgba($color-primary-medium, 0.5);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  margin: 8rem 4rem;
+
+  @include respond(tab-land) {
+    margin: 6rem 3rem;
+  }
+}
+.cta {
+  margin: 8rem 4rem;
+
+  @include respond(tab-land) {
+    margin: 6rem 3rem;
+  }
+}
+.footer {
+  padding: 10rem 4rem 4rem 4rem;
+  background-color: $color-primary-black;
+  display: grid;
+  grid-row-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  @include respond(tab-land) {
+    padding: 6rem 3rem 3rem 3rem;
+  }
+}

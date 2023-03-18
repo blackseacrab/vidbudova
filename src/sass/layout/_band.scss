@@ -1,0 +1,41 @@
+.band {
+  overflow: hidden;
+  &__stripe {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: max-content;
+    transform: translateX(-25%);
+
+    &__text {
+      display: inline-block;
+      // flex: 2 1 0;
+    }
+
+    @include respond(lap-top) {
+      font-size: 2.1rem;
+    }
+
+    &-1 {
+      background-color: $color-primary;
+      color: $color-text-light-2;
+      transform-origin: center;
+      z-index: 997;
+      animation: 20s linear infinite alternate moveLeft;
+    }
+    &-2 {
+      background-color: $color-text-light;
+      color: $color-text-dark;
+      transform-origin: center;
+      z-index: 996;
+      animation: 20s linear infinite alternate moveRight;
+    }
+
+    &__simbol {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.faq {
+  &__heading {
+    color: $color-text-light-2;
+  }
+
+  &__box {
+    max-width: 80vw;
+    margin: 0 auto;
+    transition: all 0.5s ease-in;
+
+    &__item {
+      padding: 1rem;
+      margin: 0.5rem;
+      background-color: rgba($color-text-light-2, 0.1);
+      border-radius: 4px;
+      transition: all 0.5s ease-in;
+
+      &--active {
+        background-color: rgba($color-text-light-2, 0.3);
+      }
+      // &--active &__header {
+      //   margin-bottom: 2rem;
+      // }
+      &--active &__text-box {
+        height: 100%;
+      }
+      &--active &__text {
+        opacity: 1;
+        transform: translateY(0rem);
+        visibility: visible;
+        display: inline-block;
+      }
+
+      &__header-box {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      &__header {
+        margin-left: 1rem;
+        display: inline-block;
+        font-size: 2.4rem;
+        color: $color-text-light-2;
+        font-weight: 500;
+      }
+
+      &__text-box {
+        height: 0;
+        // overflow: hidden;
+        transition: all 0.3s;
+      }
+      &__text {
+        // display: none;
+        margin-top: 2rem;
+
+        opacity: 0;
+        padding: 1rem;
+        opacity: 0;
+        margin-top: 0rem;
+
+        font-size: 1.6rem;
+        color: rgba($color-text-light-2, 0.8);
+        line-height: 1.4;
+        font-weight: 400;
+        transition: all 0.3s;
+      }
+    }
+  }
+  &__icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    fill: $color-text-light-2;
+    // transition: all 0.3s;
+
+    &__open {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.icon__hidden {
+  visibility: hidden;
+  opacity: 0;
+}

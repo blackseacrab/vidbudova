@@ -1,0 +1,27 @@
+{
+  "name": "vidbudova",
+  "version": "1.0.0",
+  "description": "Landing page for building company",
+  "scripts": {
+    "start": "parcel index.html ",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Andrii Svystunov",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.8.3",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.29.0",
+    "regenerator-runtime": "^0.13.11",
+    "swipe-event-listener": "^1.2.1"
+  }
+}
