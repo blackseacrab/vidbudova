@@ -25,7 +25,6 @@
       rel="stylesheet"
     />
 
-    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -38,12 +37,11 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-MVLJ9GG");
     </script>
-    <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="/src/sass/main.scss" />
     <script src="https://unpkg.com/swipe-event-listener@1.2.1/dist/swipe-event-listener.js"></script>
 
-    <script type="module" defer src="/src/js/controller.js"></script>
+    <script type="module" src="/src/js/controller.js"></script>
 
     <title>Відбудова | Ремонт квартир під ключ у Одесі та Дніпрі</title>
   </head>
@@ -83,10 +81,10 @@
       </a>
 
       <button class="btn-mobile-nav">
-        <svg class="icon-mobile-nav" name="menu-outline">
+        <svg class="icon-mobile-nav" id="menu-outline">
           <use xlink:href="/src/img/sprite.svg#icon-menu"></use>
         </svg>
-        <svg class="icon-mobile-nav" name="close-outline">
+        <svg class="icon-mobile-nav" id="close-outline">
           <use xlink:href="/src/img/sprite.svg#icon-circle-with-cross"></use>
         </svg>
       </button>
@@ -372,7 +370,7 @@
         />
       </div>
       <div class="about__text-box">
-        <h2 class="heading-2">
+        <div class="heading-2">
           <p class="about__text-box__subheading subheading">
             &lowast; Ми пропонуємо вам найкращий ремонт
           </p>
@@ -389,7 +387,7 @@
             >
             простір
           </div>
-        </h2>
+        </div>
         <p class="about__text-box__description paragraph">
           Компанія "Koteno Group" пропонує Вам повний спектр послуг у сфері
           будівництва та ремонту будівель. Наша компанія має багаторічний досвід
@@ -416,7 +414,7 @@
       <div class="slider">
         <div class="slide">
           <div class="testimonial">
-            <h5 class="testimonial__header">
+            <h5 class="testi monial__header">
               Компанія, яка перевершила мої очікування
             </h5>
             <blockquote class="testimonial__text">
@@ -431,7 +429,7 @@
                 alt="Фотографія"
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Ігор</h6>
+              <p class="testimonial__name">Ігор</p>
               <p class="testimonial__location">ЖК "Panorama Deluxe"</p>
             </address>
           </div>
@@ -451,7 +449,7 @@
                 alt="Фотографія "
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Олександр</h6>
+              <p class="testimonial__name">Олександр</p>
               <p class="testimonial__location">ЖК "Black Sea Towers"</p>
             </address>
           </div>
@@ -472,7 +470,7 @@
                 alt="Фотографія "
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Віталій</h6>
+              <p class="testimonial__name">Віталій</p>
               <p class="testimonial__location">ЖК "Kadorr Riviera"</p>
             </address>
           </div>
@@ -493,7 +491,7 @@
                 alt="Фотографія "
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Андрій</h6>
+              <p class="testimonial__name">Андрій</p>
               <p class="testimonial__location">ЖК "Suvorovsky Prospect"</p>
             </address>
           </div>
@@ -514,7 +512,7 @@
                 alt="Фотографія "
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Ольга</h6>
+              <p class="testimonial__name">Ольга</p>
               <p class="testimonial__location">ЖК "Marseille"</p>
             </address>
           </div>
@@ -536,7 +534,7 @@
                 alt="Фотографія "
                 class="testimonial__photo"
               />
-              <h6 class="testimonial__name">Володимир</h6>
+              <p class="testimonial__name">Володимир</p>
               <p class="testimonial__location">ЖК "City Park"</p>
             </address>
           </div>
@@ -1698,7 +1696,7 @@
               <div>
                 <label for="full-name">Ім'я</label>
                 <input
-                  id="full-name"
+                  id="full-name-popup"
                   type="text"
                   placeholder="Тарас Шевченко"
                   name="Повне ім'я"
@@ -1709,7 +1707,7 @@
               <div>
                 <label for="phone">Телефон</label>
                 <input
-                  id="phone"
+                  id="phone-popup"
                   type="tel"
                   minlength="9"
                   maxlength="13"
@@ -1723,7 +1721,7 @@
                 <label for="select-pack"
                   >Оберіть пакет який вас зацікавив</label
                 >
-                <select id="select-pack" name="Пакет" required>
+                <select id="select-pack-popup" name="Пакет" required>
                   <option value="">Оберіть пакет:</option>
                   <option value="Стартовий">Стартовий</option>
                   <option value="Базовий">Базовий</option>
@@ -1751,26 +1749,5 @@
       </div>
     </div>
     <div class="overlay hidden"></div>
-
-    <div class="success hidden" id="success">
-      <div class="success-box">
-        <div class="success__text-box">
-          <h2 class="heading-3 success__text-box__heading">
-            Вашу заявку прийнято!
-          </h2>
-          <p class="success__text paragraph">
-            Ми хочемо висловити свою щиру подяку за те, що ви відвідали наш
-            веб-сайт та заповнили форму. Ми готові надати вам кваліфіковану
-            допомогу та підтримку в будь-якій сфері нашої діяльності. Наша
-            команда фахівців завжди готова відповісти на всі ваші запитання та
-            допомогти у вирішенні будь-яких проблем. Ми будемо раді бачити вас
-            серед наших клієнтів та зробимо все можливе, щоб забезпечити вам
-            якісний сервіс та задоволення від співпраці з нами. З повагою,
-            Kotenko Group.
-          </p>
-          <a href="#" class="success-btn">На головну</a>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
