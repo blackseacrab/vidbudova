@@ -1,6 +1,4 @@
 .social {
-  justify-self: center;
-  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,7 +34,7 @@
     }
 
     &__img {
-      width: 40rem;
+      width: 30rem;
       margin-bottom: 3rem;
 
       @include respond(tab-port) {
@@ -50,7 +48,7 @@
         margin-bottom: 0;
       }
       @include respond(phone-small) {
-        width: 15rem;
+        width: 18rem;
       }
     }
   }
@@ -103,8 +101,6 @@
   @include respond(phone) {
     grid-row: 1/2;
     grid-column: 1/2;
-    padding-top: 4rem;
-    border-top: 1px solid $color-primary-light;
     justify-self: stretch;
     display: flex;
     flex-direction: column;

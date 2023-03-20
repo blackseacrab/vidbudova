@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Ремонт квартир під ключ, створення дизайну інтер'єру і будівництво котеджів високої якості м.Київ"
+      content="Ремонт квартир під ключ, створення дизайну інтер'єру і будівництво котеджів високої якості м.Одеса та Дніпро"
     />
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -25,8 +25,19 @@
       rel="stylesheet"
     />
 
-    <!-- Google Tag Manager  ADD LATER-->
-
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MVLJ9GG");
+    </script>
     <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="/src/sass/main.scss" />
@@ -34,9 +45,20 @@
 
     <script type="module" defer src="/src/js/controller.js"></script>
 
-    <title>Відбудова | Ремонт квартир під ключ у Києві</title>
+    <title>Відбудова | Ремонт квартир під ключ у Одесі та Дніпрі</title>
   </head>
   <body class="container" id="main">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MVLJ9GG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo"
@@ -84,15 +106,37 @@
         </ul>
       </div>
     </header>
-    <div class="section hero" id="hero">
+    <div class="hero" id="hero">
       <div class="hero__img-box">
         <img
-          src="/src/img/hero-1.jpg"
+          srcset="
+            src/img/hero/hero-1-1x.webp  400w,
+            src/img/hero/hero-1-2x.webp  800w,
+            src/img/hero/hero-1-3x.webp 1200w
+          "
+          srcset="
+            src/img/hero/hero-1-1x.jpg  400w,
+            src/img/hero/hero-1-2x.jpg  800w,
+            src/img/hero/hero-1-3x.jpg 1200w
+          "
+          sizes="(max-wigth: 450px) 35vw, (max-wigth: 600px) 26vw, (max-wigth: 900px) 24vw, (max-wigth: 1300px) 19vw, 400px"
+          src="/src/img/hero/hero-1-3x.jpg"
           alt="Фотографія дизану інтерьєра"
           class="hero__img hero__img-1"
         />
         <img
-          src="/src/img/hero-2.jpg"
+          srcset="
+            src/img/hero/hero-2-1x.webp  400w,
+            src/img/hero/hero-2-2x.webp  800w,
+            src/img/hero/hero-2-3x.webp 1200w
+          "
+          srcset="
+            src/img/hero/hero-2-1x.jpg  400w,
+            src/img/hero/hero-2-2x.jpg  800w,
+            src/img/hero/hero-2-3x.jpg 1200w
+          "
+          sizes="(max-wigth: 450px) 35vw, (max-wigth: 600px) 26vw, (max-wigth: 900px) 24vw, (max-wigth: 1300px) 19vw, 400px"
+          src="/src/img/hero/hero-2-3x.jpg"
           alt="Фотографія дизану інтерьєра"
           class="hero__img hero__img-2"
         />
@@ -141,7 +185,7 @@
         </div>
       </div>
     </div>
-    <div class="section band" id="band">
+    <div class="band" id="band">
       <div class="band__stripe band__stripe-1">
         <span class="band__stripe__simbol">&infin;</span>
         <p class="band__stripe__text">КРАЩА РЕМОНТНА КОМПАНІЯ</p>
@@ -311,7 +355,18 @@
     <div class="section about" id="about">
       <div class="about__img-box">
         <img
-          src="/src/img/about.png"
+          srcset="
+            /src/img/about/about-1x.webp  480w,
+            /src/img/about/about-2x.webp  960w,
+            /src/img/about/about-3x.webp 1440w
+          "
+          srcset="
+            /src/img/about/about-1x.jpg  480w,
+            /src/img/about/about-2x.jpg  960w,
+            /src/img/about/about-3x.jpg 1440w
+          "
+          sizes="(max-wigth: 450px) 50vw, (max-wigth: 600px) 36vw, (max-wigth: 900px) 33vw, (max-wigth: 1300px) 31vw, 400px"
+          src="/src/img/about/about-3x.jpg"
           alt="Фотографія дизану інтерьєра"
           class="about__img"
         />
@@ -1329,7 +1384,7 @@
           </div>
           <div class="faq__box__item__text-box">
             <p class="faq__box__item__text faq__box__item__text-14">
-              Компанія була постійно в Києві і не планує, нікуди їхати, а тільки
+              Компанія була постійно в Одесі і не планує, нікуди їхати, а тільки
               розширювати свій штат співробітників та роботу в інших областях
               України
             </p>
@@ -1350,15 +1405,36 @@
         <div class="gallery__item gallery__item-1">
           <div class="gallery__item__img-box">
             <img
-              src="/src/img/gallery-1.webp"
+              srcset="
+                src/img/gallery/gallery-1-1x.webp  820w,
+                src/img/gallery/gallery-1-2x.webp 1640w,
+                src/img/gallery/gallery-1-3x.webp 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.webp 1x,
+                src/img/gallery/gallery-1-2x.webp 2x,
+                src/img/gallery/gallery-1-3x.webp 3x
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg  820w,
+                src/img/gallery/gallery-1-2x.jpg 1640w,
+                src/img/gallery/gallery-1-3x.jpg 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg 1x,
+                src/img/gallery/gallery-1-2x.jpg 2x,
+                src/img/gallery/gallery-1-3x.jpg 3x
+              "
+              sizes="(max-wigth: 450px) 65vw, (max-wigth: 600px) 68vw, (max-wigth: 900px) 70vw, (max-wigth: 1300px) 53vw, 400px"
+              src="/src/img/gallery/gallery-1-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="gallery__item__img"
             />
             <p class="gallery__item__img__title">Ремонт квартири</p>
           </div>
-          <h5 class="gallery__item__header heading-3">ЖК Taryan Towers</h5>
+          <h5 class="gallery__item__header heading-3">ЖК Таїровські сади</h5>
           <p class="gallery__item__text paragraph">
-            Двох кімнатна квартира в центрі Києва, було розроблена за нашим
+            Двох кімнатна квартира в центрі Одеси, було розроблена за нашим
             дизайном проєкту. Найголовніше для молодого сімейства було створення
             комфорту для життя і роботи. Молода людина більшу частину часу
             працює вдома, а його дружина створює власну косметику.
@@ -1367,13 +1443,24 @@
         <div class="gallery__item gallery__item-2">
           <div class="gallery__item__img-box">
             <img
-              src="/src/img/gallery-2.jpg"
+              srcset="
+                src/img/gallery/gallery-2-1x.webp  410w,
+                src/img/gallery/gallery-2-2x.webp  820w,
+                src/img/gallery/gallery-2-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-2-1x.jpg  410w,
+                src/img/gallery/gallery-2-2x.jpg  820w,
+                src/img/gallery/gallery-2-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 450px) 65vw, (max-wigth: 600px) 68vw, (max-wigth: 900px) 70vw, (max-wigth: 1300px) 25vw, 400px"
+              src="/src/img/gallery/gallery-2-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="gallery__item__img"
             />
             <p class="gallery__item__img__title">Ремонт під ключ</p>
           </div>
-          <h5 class="gallery__item__header heading-3">ЖК Tetris Hall</h5>
+          <h5 class="gallery__item__header heading-3">ЖК Вузовський</h5>
           <p class="gallery__item__text paragraph">
             Молода сім'я замовила не тільки дизайн проект , а ремонт квартири
             під ключ. Головним приміщенням стала вітальня. Замовники наголосили
@@ -1385,13 +1472,24 @@
         <div class="gallery__item gallery__item-3">
           <div class="gallery__item__img-box">
             <img
-              src="/src/img/gallery-3.webp"
+              srcset="
+                src/img/gallery/gallery-3-1x.webp  410w,
+                src/img/gallery/gallery-3-2x.webp  820w,
+                src/img/gallery/gallery-3-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-3-1x.jpg  410w,
+                src/img/gallery/gallery-3-2x.jpg  820w,
+                src/img/gallery/gallery-3-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 450px) 65vw, (max-wigth: 600px) 68vw, (max-wigth: 900px) 70vw, (max-wigth: 1300px) 25vw, 400px"
+              src="/src/img/gallery/gallery-3-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="gallery__item__img"
             />
             <p class="gallery__item__img__title">Ремонт</p>
           </div>
-          <h5 class="gallery__item__header heading-3">ЖК PECHERSK PLAZA 52</h5>
+          <h5 class="gallery__item__header heading-3">ЖК Чорне море</h5>
           <p class="gallery__item__text paragraph">
             Цього разу клієнтом став молодий неодружений чоловік, айтішник за
             професією. Йому дуже подобається лофтовий напрямок. Крім того,
@@ -1507,7 +1605,7 @@
         ></div>
       </div>
     </div>
-    <footer class="footer" id="footer">
+    <footer class="section footer" id="footer">
       <div class="social">
         <a href="#" class="social__logo">
           <img

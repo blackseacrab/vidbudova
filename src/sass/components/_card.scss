@@ -29,10 +29,10 @@
       }
     }
     &--front-main::after {
-      content: "Краща ціна";
+      content: "Акція";
       position: absolute;
-      top: 4%;
-      right: -24%;
+      top: 2rem;
+      right: -8rem;
 
       text-transform: uppercase;
       font-size: 1.4rem;
@@ -41,12 +41,6 @@
       background-color: #ffd43b;
       padding: 0.8rem 8rem;
       transform: rotate(45deg);
-
-      @include respond(lap-top) {
-        top: 4%;
-        right: -28%;
-        font-size: 1.4rem;
-      }
     }
 
     &--back {
@@ -198,13 +192,18 @@
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: $color-primary-light;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, 0.15);
 
     .card--main {
       background-color: none;
     }
+
+    .card__side--front-main {
+      background-color: $color-primary-light;
+    }
+
     &__side {
       height: auto;
       position: relative;

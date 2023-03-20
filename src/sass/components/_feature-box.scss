@@ -1,7 +1,9 @@
 .features-box {
   display: grid;
-  grid-gap: 8rem;
   grid-template-columns: repeat(3, 30rem);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 8rem;
+
   justify-content: center;
 
   @include respond(tab-port) {
@@ -9,14 +11,16 @@
   }
   @include respond(phone-big) {
     grid-template-columns: repeat(2, 28rem);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 4rem;
   }
   @include respond(phone) {
     grid-template-columns: repeat(1, 28rem);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 .feature-box {
-  height: 30rem;
+  height: 100%;
   background-color: rgba($color-primary, 0.3);
   font-size: 1.6rem;
   line-height: 1.4;
@@ -26,10 +30,10 @@
   transition: transform 0.3s;
 
   @include respond(tab-port) {
-    height: 28rem;
+    // height: 28rem;
   }
   @include respond(phone) {
-    height: 25rem;
+    // height: 25rem;
   }
 
   &__text {

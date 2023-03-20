@@ -36,6 +36,9 @@
   }
 }
 .features {
+  border-top: 1px solid rgba($color-primary-medium, 0.5);
+  border-bottom: 1px solid rgba($color-primary-medium, 0.5);
+
   padding: 8rem 4rem;
   background-image: linear-gradient(
     to bottom,
@@ -123,4 +126,13 @@
   @include respond(tab-land) {
     padding: 6rem 3rem 3rem 3rem;
   }
+}
+// Revealing the sections
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
