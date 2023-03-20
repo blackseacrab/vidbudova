@@ -7,6 +7,7 @@ export const mobileNav = function () {
 
   btnNavEl.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
+    console.log(`class added`);
   });
   mobileNavLinkEl.forEach((link) =>
     link.addEventListener("click", function () {

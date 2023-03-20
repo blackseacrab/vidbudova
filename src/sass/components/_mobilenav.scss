@@ -17,7 +17,7 @@
   border-radius: 2px;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+#close-outline {
   display: none;
 }
 
@@ -75,11 +75,11 @@
     z-index: 1000;
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open #close-outline {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open #menu-outline {
     display: none;
   }
 
