@@ -14,7 +14,7 @@
   &__logo {
     padding: 2rem;
     &__img {
-      width: max-content;
+      width: 100%;
       height: 8rem;
 
       @include respond(phone-small) {
