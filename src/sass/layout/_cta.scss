@@ -85,10 +85,18 @@
       rgba($color-card-base-1, 0.4),
       rgba($color-card-base-2, 0.45)
     ),
-    url("/src/img/hero-2.jpg");
+    url("/src/img/hero/hero-1-2x.jpg");
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-card-base-1, 0.4),
+        rgba($color-card-base-2, 0.45)
+      ),
+      url("/src/img/hero/hero-1-3x.jpg");
+  }
   @include respond(phone-big) {
     background-image: none;
   }
