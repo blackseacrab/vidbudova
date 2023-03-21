@@ -40,7 +40,7 @@
 
     <link rel="stylesheet" href="/src/sass/main.scss" />
 
-    <script type="module" src="/src/js/projects/controllerPro.js"></script>
+    <script type="module" src="/src/js/projects/controller.js"></script>
 
     <title>Kotenko-Group | Ремонт квартир під ключ у Одесі та Дніпрі</title>
   </head>
@@ -56,7 +56,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header ">
+    <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo"
           ><img
@@ -75,7 +75,7 @@
           </ul>
         </nav>
       </div>
-      <a class="btn btn-popup header__btn u-margin-right" href="#cta">
+      <a class="btn btn-popup header__btn u-margin-right" href="">
         Зв'язатись
       </a>
 
@@ -95,6 +95,7 @@
           <li>
             <a class="mobile__nav--link" href="projects.html">Проекти</a>
           </li>
+          <li>
             <a class="mobile__nav--link" href="#cta">Зв'язатись з нами</a>
           </li>
         </ul>
@@ -102,7 +103,7 @@
     </header>
 
     <div class="project">
-      <div class="project__heading-box ">
+      <div class="project__heading-box">
         <div class="project__heading heading-2">
           <p class="project__subheading subheading">
             &lowast; Нещодавня робота
@@ -113,6 +114,24 @@
       <div class="project-box">
         <div class="project__item project__item-1">
           <div class="project__item__img-box">
+            <!-- <button
+              class="slider__btn slider__btn--left project__slider__btn--left"
+            >
+              <svg class="slider__btn__icon">
+                <use
+                  xlink:href="/src/img/sprite.svg#icon-chevron-with-circle-left"
+                ></use>
+              </svg>
+            </button>
+            <button
+              class="slider__btn slider__btn--right project__slider__btn--right"
+            >
+              <svg class="slider__btn__icon">
+                <use
+                  xlink:href="/src/img/sprite.svg#icon-chevron-with-circle-right"
+                ></use>
+              </svg>
+            </button> -->
             <img
               srcset="
                 src/img/gallery/gallery-1-1x.webp  820w,
@@ -134,7 +153,7 @@
                 src/img/gallery/gallery-1-2x.jpg 2x,
                 src/img/gallery/gallery-1-3x.jpg 3x
               "
-              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 53vw, 1640px"
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 38vw, 1640px"
               src="/src/img/gallery/gallery-1-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="project__item__img"
@@ -162,7 +181,7 @@
                 src/img/gallery/gallery-2-2x.jpg  820w,
                 src/img/gallery/gallery-2-3x.jpg 1230w
               "
-              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 38vw, 820px"
               src="/src/img/gallery/gallery-2-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="project__item__img"
@@ -191,7 +210,7 @@
                 src/img/gallery/gallery-3-2x.jpg  820w,
                 src/img/gallery/gallery-3-3x.jpg 1230w
               "
-              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 38vw, 820px"
               src="/src/img/gallery/gallery-3-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="project__item__img"
@@ -211,24 +230,24 @@
           <div class="project__item__img-box">
             <img
               srcset="
-                src/img/gallery/gallery-1-1x.webp  820w,
-                src/img/gallery/gallery-1-2x.webp 1640w,
-                src/img/gallery/gallery-1-3x.webp 2460w
+                src/img/gallery/gallery-4-1x.webp  820w,
+                src/img/gallery/gallery-4-2x.webp 1640w,
+                src/img/gallery/gallery-4-3x.webp 2460w
               "
               srcset="
-                src/img/gallery/gallery-1-1x.webp 1x,
-                src/img/gallery/gallery-1-2x.webp 2x,
-                src/img/gallery/gallery-1-3x.webp 3x
+                src/img/gallery/gallery-4-1x.webp 1x,
+                src/img/gallery/gallery-4-2x.webp 2x,
+                src/img/gallery/gallery-4-3x.webp 3x
               "
               srcset="
-                src/img/gallery/gallery-1-1x.jpg  820w,
-                src/img/gallery/gallery-1-2x.jpg 1640w,
-                src/img/gallery/gallery-1-3x.jpg 2460w
+                src/img/gallery/gallery-4-1x.jpg  820w,
+                src/img/gallery/gallery-4-2x.jpg 1640w,
+                src/img/gallery/gallery-4-3x.jpg 2460w
               "
               srcset="
-                src/img/gallery/gallery-1-1x.jpg 1x,
-                src/img/gallery/gallery-1-2x.jpg 2x,
-                src/img/gallery/gallery-1-3x.jpg 3x
+                src/img/gallery/gallery-4-1x.jpg 1x,
+                src/img/gallery/gallery-4-2x.jpg 2x,
+                src/img/gallery/gallery-4-3x.jpg 3x
               "
               sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 53vw, 1640px"
               src="/src/img/gallery/gallery-1-3x.jpg"
@@ -249,16 +268,26 @@
           <div class="project__item__img-box">
             <img
               srcset="
-                src/img/gallery/gallery-2-1x.webp  410w,
-                src/img/gallery/gallery-2-2x.webp  820w,
-                src/img/gallery/gallery-2-3x.webp 1230w
+                src/img/gallery/gallery-5-1x.webp  820w,
+                src/img/gallery/gallery-5-2x.webp 1640w,
+                src/img/gallery/gallery-5-3x.webp 2460w
               "
               srcset="
-                src/img/gallery/gallery-2-1x.jpg  410w,
-                src/img/gallery/gallery-2-2x.jpg  820w,
-                src/img/gallery/gallery-2-3x.jpg 1230w
+                src/img/gallery/gallery-5-1x.webp 1x,
+                src/img/gallery/gallery-5-2x.webp 2x,
+                src/img/gallery/gallery-5-3x.webp 3x
               "
-              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              srcset="
+                src/img/gallery/gallery-5-1x.jpg  820w,
+                src/img/gallery/gallery-5-2x.jpg 1640w,
+                src/img/gallery/gallery-5-3x.jpg 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-5-1x.jpg 1x,
+                src/img/gallery/gallery-5-2x.jpg 2x,
+                src/img/gallery/gallery-5-3x.jpg 3x
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 38vw, 820px"
               src="/src/img/gallery/gallery-2-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="project__item__img"
@@ -278,16 +307,26 @@
           <div class="project__item__img-box">
             <img
               srcset="
-                src/img/gallery/gallery-3-1x.webp  410w,
-                src/img/gallery/gallery-3-2x.webp  820w,
-                src/img/gallery/gallery-3-3x.webp 1230w
+                src/img/gallery/gallery-6-1x.webp  820w,
+                src/img/gallery/gallery-6-2x.webp 1640w,
+                src/img/gallery/gallery-6-3x.webp 2460w
               "
               srcset="
-                src/img/gallery/gallery-3-1x.jpg  410w,
-                src/img/gallery/gallery-3-2x.jpg  820w,
-                src/img/gallery/gallery-3-3x.jpg 1230w
+                src/img/gallery/gallery-6-1x.webp 1x,
+                src/img/gallery/gallery-6-2x.webp 2x,
+                src/img/gallery/gallery-6-3x.webp 3x
               "
-              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              srcset="
+                src/img/gallery/gallery-6-1x.jpg  820w,
+                src/img/gallery/gallery-6-2x.jpg 1640w,
+                src/img/gallery/gallery-6-3x.jpg 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-6-1x.jpg 1x,
+                src/img/gallery/gallery-6-2x.jpg 2x,
+                src/img/gallery/gallery-6-3x.jpg 3x
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 38vw, 820px"
               src="/src/img/gallery/gallery-3-3x.jpg"
               alt="Фотографія квартири після ремонту"
               class="project__item__img"
@@ -436,13 +475,15 @@
       <nav class="nav">
         <p class="nav__heading contacts__heading">Навігація</p>
         <ul class="nav__nav">
-          <li><a class="nav__nav__link" href="#what">Чим займаємось</a></li>
-          <li><a class="nav__nav__link" href="#features">Нащі переваги</a></li>
-          <li><a class="nav__nav__link" href="#testimonials">Відгуки</a></li>
-          <li><a class="nav__nav__link" href="#buy">Вартість робіт</a></li>
-          <li><a class="nav__nav__link" href="#faq">Часті запитання</a></li>
-          <li><a class="nav__nav__link" href="#gallery">Наші роботи</a></li>
-          <li><a class="nav__nav__link" href="#cta">Зв'язатись з нами</a></li>
+          <li>
+            <a class="nav__nav__link" href="index.html">Головна</a>
+          </li>
+          <li>
+            <a class="nav__nav__link" href="projects.html">Проекти</a>
+          </li>
+          <li>
+            <a class="nav__nav__link" href="#cta">Зв'язатись з нами</a>
+          </li>
         </ul>
       </nav>
     </footer>

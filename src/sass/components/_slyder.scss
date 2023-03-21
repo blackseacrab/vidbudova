@@ -79,7 +79,7 @@
 
   /* IN THE END */
   overflow: hidden;
-
+  // overflow: scroll;
   @include respond(tab-port) {
     max-width: 75vw;
   }
@@ -135,11 +135,13 @@
 .slider__btn--left {
   left: 6%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
 }
 
 .slider__btn--right {
   right: 6%;
   transform: translate(50%, -50%);
+  background-color: transparent;
 }
 
 .dots {

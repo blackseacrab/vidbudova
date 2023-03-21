@@ -1,8 +1,10 @@
 .projects {
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .project {
+  max-width: 100vw;
+
   &__heading-box {
     margin: 4rem;
   }
@@ -62,5 +64,9 @@
     display: flex;
     gap: 4rem;
     justify-content: center;
+  }
+  &__slider__btn--right {
+  }
+  &__slider__btn--left {
   }
 }
