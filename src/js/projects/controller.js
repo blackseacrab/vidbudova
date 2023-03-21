@@ -9,7 +9,7 @@ import * as slider from "./vievs/slider";
 const init = function () {
   popup.popupWindowOpenClose();
   mobileNav.mobileNav();
-  // model.smoothScrolling();
+  model.smoothScrolling();
   footer.autoChangeYear();
 };
 init();
