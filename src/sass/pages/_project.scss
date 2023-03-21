@@ -1,0 +1,17 @@
+.projects .header {
+  position: relative;
+
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  @supports (-webkit-backdrop-filter: brightness(100%)) or
+    (backdrop-filter: brightness(100%)) {
+    -webkit-backdrop-filter: brightness(100%);
+    backdrop-filter: brightness(100%);
+    background-color: rgba($color-primary-black, 0.8);
+  }
+}

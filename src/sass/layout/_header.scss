@@ -1,4 +1,15 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 8rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 4rem;
   z-index: 999;
   @supports (-webkit-backdrop-filter: brightness(50%)) or
     (backdrop-filter: brightness(50%)) {

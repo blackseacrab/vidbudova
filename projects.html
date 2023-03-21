@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Ремонт квартир під ключ, створення дизайну інтер'єру і будівництво котеджів високої якості м.Одеса та Дніпро"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MVLJ9GG");
+    </script>
+
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+
+    <script type="module" src="/src/js/projects/controllerPro.js"></script>
+
+    <title>Kotenko-Group | Ремонт квартир під ключ у Одесі та Дніпрі</title>
+  </head>
+  <body class="projects">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MVLJ9GG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header ">
+      <div class="header__container">
+        <a href="#" class="header__logo"
+          ><img
+            src="/src/img/logo-big.png"
+            alt="Логотип компанії 'Kotenko-Group'"
+            class="header__logo__img"
+        /></a>
+        <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li>
+              <a class="header__nav--link" href="index.html">Головна</a>
+            </li>
+            <li>
+              <a class="header__nav--link" href="projects.html">Проекти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="btn btn-popup header__btn u-margin-right" href="">
+        Зв'язатись
+      </a>
+
+      <button class="btn-mobile-nav">
+        <svg class="icon-mobile-nav" id="menu-outline">
+          <use xlink:href="/src/img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="icon-mobile-nav" id="close-outline">
+          <use xlink:href="/src/img/sprite.svg#icon-circle-with-cross"></use>
+        </svg>
+      </button>
+      <div class="mobile__nav">
+        <ul class="mobile__nav--list">
+          <li>
+            <a class="mobile__nav--link" href="index.html">Головна</a>
+          </li>
+          <li>
+            <a class="mobile__nav--link" href="projects.html">Проекти</a>
+          </li>
+            <a class="mobile__nav--link" href="#cta">Зв'язатись з нами</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="project">
+      <div class="project__heading-box ">
+        <div class="project__heading heading-2">
+          <p class="project__subheading subheading">
+            &lowast; Нещодавня робота
+          </p>
+          Наші проекти
+        </div>
+      </div>
+      <div class="project-box">
+        <div class="project__item project__item-1">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-1-1x.webp  820w,
+                src/img/gallery/gallery-1-2x.webp 1640w,
+                src/img/gallery/gallery-1-3x.webp 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.webp 1x,
+                src/img/gallery/gallery-1-2x.webp 2x,
+                src/img/gallery/gallery-1-3x.webp 3x
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg  820w,
+                src/img/gallery/gallery-1-2x.jpg 1640w,
+                src/img/gallery/gallery-1-3x.jpg 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg 1x,
+                src/img/gallery/gallery-1-2x.jpg 2x,
+                src/img/gallery/gallery-1-3x.jpg 3x
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 53vw, 1640px"
+              src="/src/img/gallery/gallery-1-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт квартири</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Таїровські сади</h5>
+          <p class="project__item__text paragraph">
+            Двох кімнатна квартира в центрі Одеси, було розроблена за нашим
+            дизайном проєкту. Найголовніше для молодого сімейства було створення
+            комфорту для життя і роботи. Молода людина більшу частину часу
+            працює вдома, а його дружина створює власну косметику.
+          </p>
+        </div>
+        <div class="project__item project__item-2">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-2-1x.webp  410w,
+                src/img/gallery/gallery-2-2x.webp  820w,
+                src/img/gallery/gallery-2-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-2-1x.jpg  410w,
+                src/img/gallery/gallery-2-2x.jpg  820w,
+                src/img/gallery/gallery-2-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              src="/src/img/gallery/gallery-2-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт під ключ</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Вузовський</h5>
+          <p class="project__item__text paragraph">
+            Молода сім'я замовила не тільки дизайн проект , а ремонт квартири
+            під ключ. Головним приміщенням стала вітальня. Замовники наголосили
+            саме на ній. Особливим побажанням було розмістити "величезний"
+            телевізор. Так, щоб його було добре дивитися і у вітальні, і в
+            поєднаній кухні.
+          </p>
+        </div>
+        <div class="project__item project__item-3">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-3-1x.webp  410w,
+                src/img/gallery/gallery-3-2x.webp  820w,
+                src/img/gallery/gallery-3-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-3-1x.jpg  410w,
+                src/img/gallery/gallery-3-2x.jpg  820w,
+                src/img/gallery/gallery-3-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              src="/src/img/gallery/gallery-3-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Чорне море</h5>
+          <p class="project__item__text paragraph">
+            Цього разу клієнтом став молодий неодружений чоловік, айтішник за
+            професією. Йому дуже подобається лофтовий напрямок. Крім того,
+            інтер'єр мав бути хоч і мінімальним, але функціональним. Як
+            результат — вийшла справжня рівновага між комфортом та розумним
+            споживанням.
+          </p>
+        </div>
+        <div class="project__item project__item-4">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-1-1x.webp  820w,
+                src/img/gallery/gallery-1-2x.webp 1640w,
+                src/img/gallery/gallery-1-3x.webp 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.webp 1x,
+                src/img/gallery/gallery-1-2x.webp 2x,
+                src/img/gallery/gallery-1-3x.webp 3x
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg  820w,
+                src/img/gallery/gallery-1-2x.jpg 1640w,
+                src/img/gallery/gallery-1-3x.jpg 2460w
+              "
+              srcset="
+                src/img/gallery/gallery-1-1x.jpg 1x,
+                src/img/gallery/gallery-1-2x.jpg 2x,
+                src/img/gallery/gallery-1-3x.jpg 3x
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 53vw, 1640px"
+              src="/src/img/gallery/gallery-1-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт квартири</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Таїровські сади</h5>
+          <p class="project__item__text paragraph">
+            Двох кімнатна квартира в центрі Одеси, було розроблена за нашим
+            дизайном проєкту. Найголовніше для молодого сімейства було створення
+            комфорту для життя і роботи. Молода людина більшу частину часу
+            працює вдома, а його дружина створює власну косметику.
+          </p>
+        </div>
+        <div class="project__item project__item-5">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-2-1x.webp  410w,
+                src/img/gallery/gallery-2-2x.webp  820w,
+                src/img/gallery/gallery-2-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-2-1x.jpg  410w,
+                src/img/gallery/gallery-2-2x.jpg  820w,
+                src/img/gallery/gallery-2-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              src="/src/img/gallery/gallery-2-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт під ключ</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Вузовський</h5>
+          <p class="project__item__text paragraph">
+            Молода сім'я замовила не тільки дизайн проект , а ремонт квартири
+            під ключ. Головним приміщенням стала вітальня. Замовники наголосили
+            саме на ній. Особливим побажанням було розмістити "величезний"
+            телевізор. Так, щоб його було добре дивитися і у вітальні, і в
+            поєднаній кухні.
+          </p>
+        </div>
+        <div class="project__item project__item-6">
+          <div class="project__item__img-box">
+            <img
+              srcset="
+                src/img/gallery/gallery-3-1x.webp  410w,
+                src/img/gallery/gallery-3-2x.webp  820w,
+                src/img/gallery/gallery-3-3x.webp 1230w
+              "
+              srcset="
+                src/img/gallery/gallery-3-1x.jpg  410w,
+                src/img/gallery/gallery-3-2x.jpg  820w,
+                src/img/gallery/gallery-3-3x.jpg 1230w
+              "
+              sizes="(max-wigth: 28.125em) 65vw, (max-wigth: 37.5em) 68vw, (max-wigth: 56.25em) 70vw, (max-wigth: 81.25em) 25vw, 820px"
+              src="/src/img/gallery/gallery-3-3x.jpg"
+              alt="Фотографія квартири після ремонту"
+              class="project__item__img"
+            />
+            <p class="project__item__img__title">Ремонт</p>
+          </div>
+          <h5 class="project__item__header heading-3">ЖК Чорне море</h5>
+          <p class="project__item__text paragraph">
+            Цього разу клієнтом став молодий неодружений чоловік, айтішник за
+            професією. Йому дуже подобається лофтовий напрямок. Крім того,
+            інтер'єр мав бути хоч і мінімальним, але функціональним. Як
+            результат — вийшла справжня рівновага між комфортом та розумним
+            споживанням.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="gallery__btns">
+        <a class="btn btn--gallery" href="#">Більше наших робіт</a>
+      </div> -->
+    </div>
+
+    <div class="section cta" id="cta">
+      <div class="cta-box">
+        <div class="cta__text-box">
+          <h2 class="heading-3 cta__text-box__heading">
+            Залиште вашу заявку прямо зараз!
+          </h2>
+          <p class="cta__text paragraph">
+            Заповніть цю форму, щоб отримати додаткову інформацію про нашу
+            будівельну компанію. Ми з радістю відповімо на ваші запитання та
+            допоможемо зробити правильний вибір.
+          </p>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="cta__form"
+            name="sign-up"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+            />
+            <div>
+              <label for="full-name">Ім'я</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Тарас Шевченко"
+                name="Повне ім'я"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                type="tel"
+                minlength="9"
+                maxlength="13"
+                placeholder="+380 12 345 67 89"
+                name="Телефон"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="select-pack">Оберіть пакет який вас зацікавив</label>
+              <select id="select-pack" name="Пакет" required>
+                <option value="">Оберіть пакет:</option>
+                <option value="Стартовий">Стартовий</option>
+                <option value="Базовий">Базовий</option>
+                <option value="стандартний">Стандарт</option>
+                <option value="Максимум">Максимум</option>
+              </select>
+            </div>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <button type="submit" class="btn btn--form">
+              Відправити запит
+            </button>
+          </form>
+        </div>
+        <div
+          class="cta-img-box"
+          role="img"
+          aria-label="Фотографія квартири"
+        ></div>
+      </div>
+    </div>
+    <footer class="section footer" id="footer">
+      <div class="social">
+        <a href="#" class="social__logo">
+          <img
+            class="social__logo__img"
+            alt="OSV logo"
+            src="/src/img/logo-big.png"
+          />
+        </a>
+
+        <ul class="social__links">
+          <li>
+            <a
+              class="social__links__link"
+              href="https://www.instagram.com/kotenko_group/"
+              target="_blank"
+            >
+              <svg class="social__links__icon">
+                <use xlink:href="/src/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__links__link" href="#" target="_blank">
+              <svg class="social__links__icon">
+                <use xlink:href="/src/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="social__copyright">
+          &copy; <span class="year">2027</span> Всі права захищені.
+        </p>
+      </div>
+      <div class="contacts">
+        <p class="contacts__heading">Контакти</p>
+        <address class="contacts__contact">
+          <p class="contacts__contact__address">м. Дніпро | м. Одеса</p>
+          <a class="contacts__contact__link" href="tel:+380660353578"
+            >(+38) 099-046-69-67</a
+          >
+
+          <a class="contacts__contact__link" href="mailto:svistunov.o@gmail.com"
+            >youremail@gmail.com</a
+          >
+        </address>
+      </div>
+
+      <nav class="nav">
+        <p class="nav__heading contacts__heading">Навігація</p>
+        <ul class="nav__nav">
+          <li><a class="nav__nav__link" href="#what">Чим займаємось</a></li>
+          <li><a class="nav__nav__link" href="#features">Нащі переваги</a></li>
+          <li><a class="nav__nav__link" href="#testimonials">Відгуки</a></li>
+          <li><a class="nav__nav__link" href="#buy">Вартість робіт</a></li>
+          <li><a class="nav__nav__link" href="#faq">Часті запитання</a></li>
+          <li><a class="nav__nav__link" href="#gallery">Наші роботи</a></li>
+          <li><a class="nav__nav__link" href="#cta">Зв'язатись з нами</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- Popup window  hidden-->
+
+    <div class="popup hidden" id="popup">
+      <div class="popup__content">
+        <div class="cta-box">
+          <button class="popup__close">&times;</button>
+          <div class="cta__text-box">
+            <h2 class="heading-3 cta__text-box__heading">
+              Залиште вашу заявку прямо зараз!
+            </h2>
+            <p class="cta__text paragraph">
+              Заповніть цю форму, щоб отримати додаткову інформацію про нашу
+              будівельну компанію. Ми з радістю відповімо на ваші запитання та
+              допоможемо зробити правильний вибір.
+            </p>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="cta__form"
+              name="sign-up"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+              />
+              <div>
+                <label for="full-name">Ім'я</label>
+                <input
+                  id="full-name-popup"
+                  type="text"
+                  placeholder="Тарас Шевченко"
+                  name="Повне ім'я"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Телефон</label>
+                <input
+                  id="phone-popup"
+                  type="tel"
+                  minlength="9"
+                  maxlength="13"
+                  placeholder="+380 12 345 67 89"
+                  name="Телефон"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-pack"
+                  >Оберіть пакет який вас зацікавив</label
+                >
+                <select id="select-pack-popup" name="Пакет" required>
+                  <option value="">Оберіть пакет:</option>
+                  <option value="Стартовий">Стартовий</option>
+                  <option value="Базовий">Базовий</option>
+                  <option value="стандартний">Стандарт</option>
+                  <option value="Максимум">Максимум</option>
+                </select>
+              </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+
+              <button type="submit" class="btn btn--form">
+                Відправити запит
+              </button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Фотографія квартири"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
