@@ -11,7 +11,7 @@
     (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba($color-primary-black, 0.3);
+    background-color: rgba($color-primary-medium, 0.9);
   }
   position: fixed;
   top: 50%;
@@ -26,20 +26,42 @@
     overflow: hidden;
     box-shadow: 0 2rem 4rem rgba($color-primary-black, 0.5);
     width: 60vw;
+
+    @include respond(phone-big) {
+      width: 75vw;
+    }
+    @include respond(phone) {
+      width: 85vw;
+    }
+    @include respond(phone-small) {
+      width: 95vw;
+    }
   }
   &__text-box {
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+    }
+    gap: 4rem;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    @include respond(phone) {
+      padding: 3.8rem 4.4rem 4.4rem 4.4rem;
+
+      gap: 2rem;
+    }
     &__heading {
-      margin-bottom: 4rem;
       color: inherit;
     }
   }
   &__text {
     font-size: 1.8rem;
     line-height: 1.8;
-    margin-bottom: 4.8rem;
   }
-  &-btn {
+  &-btn:link,
+  &-btn:active {
+    align-self: center;
+    width: max-content;
     color: $color-primary;
     font-size: 2rem;
     text-decoration: none;
@@ -48,10 +70,10 @@
     background-color: $color-text-light;
     border-radius: 4px;
     border: 2px solid transparent;
-
-    &:hover {
-      color: $color-text-medium;
-      border: 2px solid $color-text-medium;
-    }
+  }
+  &-btn:hover,
+  &-btn:visited {
+    color: $color-text-medium;
+    border: 2px solid $color-text-medium;
   }
 }
