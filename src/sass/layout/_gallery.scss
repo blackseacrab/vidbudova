@@ -28,9 +28,16 @@
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr;
       width: 75%;
       padding-bottom: 6rem;
+      grid-row-gap: 6rem;
+    }
+    @include respond(phone-big) {
+      grid-row-gap: 4rem;
+    }
+    @include respond(phone-small) {
+      grid-row-gap: 3rem;
     }
   }
   &__item {
@@ -64,6 +71,7 @@
     }
     &__header {
       font-size: 3rem;
+      margin-bottom: 2rem;
     }
     &__text {
     }
