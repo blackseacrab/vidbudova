@@ -8,6 +8,10 @@
     margin: 0 auto;
     transition: all 0.5s ease-in;
 
+    @include respond(phone) {
+      max-width: 87vw;
+    }
+
     &__item {
       padding: 1rem;
       margin: 0.5rem;
@@ -38,7 +42,8 @@
         position: relative;
       }
       &__header {
-        margin-left: 1rem;
+        max-width: 93%;
+        // margin-left: 1rem;
         display: inline-block;
         font-size: 2.4rem;
         color: $color-text-light-2;
